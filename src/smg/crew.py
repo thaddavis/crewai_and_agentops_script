@@ -12,17 +12,17 @@ class SmgCrew():
 	"""Smg crew"""
 
 	@agent
+	def reporting_analyst(self) -> Agent:
+		return Agent(
+			config=self.agents_config['reporting_analyst'],
+			verbose=True
+		)
+	
+	@agent
 	def researcher(self) -> Agent:
 		return Agent(
 			config=self.agents_config['researcher'],
 			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
-			verbose=True
-		)
-
-	@agent
-	def reporting_analyst(self) -> Agent:
-		return Agent(
-			config=self.agents_config['reporting_analyst'],
 			verbose=True
 		)
 
@@ -43,8 +43,8 @@ class SmgCrew():
 	def crew(self) -> Crew:
 		"""Creates the Smg crew"""
 		return Crew(
-			agents=self.agents, # Automatically created by the @agent decorator
-			tasks=self.tasks, # Automatically created by the @task decorator
+			agents=[self.reporting_analyst(), self.researcher()], # Automatically created by the @agent decorator
+			tasks=[self.reporting_task(), self.research_task()], # Automatically created by the @task decorator
 			process=Process.sequential,
 			verbose=True,
 			# process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/

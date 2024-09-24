@@ -2,6 +2,13 @@
 import sys
 from smg.crew import SmgCrew
 
+import warnings
+warnings.filterwarnings("ignore", message="invalid escape sequence")
+
+import agentops
+import os
+agentops.init(os.getenv("AGENTOPS_API_KEY"))
+
 # This main file is intended to be a way for your to run your
 # crew locally, so refrain from adding necessary logic into this file.
 # Replace with inputs you want to test with, it will automatically
