@@ -9,42 +9,42 @@ from crewai.project import CrewBase, agent, crew, task
 
 @CrewBase
 class SmgCrew():
-	"""Hit Factory"""
+	"""Smg crew"""
 
 	@agent
-	def songwriter(self) -> Agent:
+	def reporting_analyst(self) -> Agent:
 		return Agent(
-			config=self.agents_config['songwriter'],
+			config=self.agents_config['reporting_analyst'],
 			verbose=True
 		)
 	
 	@agent
-	def producer(self) -> Agent:
+	def researcher(self) -> Agent:
 		return Agent(
-			config=self.agents_config['producer'],
+			config=self.agents_config['researcher'],
 			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
 			verbose=True
 		)
 
 	@task
-	def songwriting(self) -> Task:
+	def research_task(self) -> Task:
 		return Task(
-			config=self.tasks_config['songwriting'],
+			config=self.tasks_config['research_task'],
 		)
 
 	@task
-	def producing(self) -> Task:
+	def reporting_task(self) -> Task:
 		return Task(
-			config=self.tasks_config['producing'],
-			output_file='song.md'
+			config=self.tasks_config['reporting_task'],
+			output_file='report.md'
 		)
 
 	@crew
 	def crew(self) -> Crew:
 		"""Creates the Smg crew"""
 		return Crew(
-			agents=[self.songwriter(), self.producer()], # Automatically created by the @agent decorator
-			tasks=[self.songwriting(), self.producing()], # Automatically created by the @task decorator
+			agents=[self.reporting_analyst(), self.researcher()], # Automatically created by the @agent decorator
+			tasks=[self.reporting_task(), self.research_task], # Automatically created by the @task decorator
 			process=Process.sequential,
 			verbose=True,
 			# process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/

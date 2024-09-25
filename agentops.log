@@ -1,3 +1,3 @@
-2024-09-24 04:13:25,059 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=1acb19c7-3deb-48c2-96ff-e07a76e3ae9a
-2024-09-24 04:13:40,789 - INFO - Analytics for this run - LLM calls: 2 | Tool calls: 0 | Actions: 0 | Errors: 0 | Duration: 14.1s | Cost: $0.000959
-2024-09-24 04:13:40,795 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=1acb19c7-3deb-48c2-96ff-e07a76e3ae9a
+2024-09-24 14:18:43,315 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=848d4017-501c-423d-b48b-8a739fff004b
+2024-09-24 14:19:09,296 - INFO - Analytics for this run - LLM calls: 2 | Tool calls: 0 | Actions: 0 | Errors: 0 | Duration: 24.3s | Cost: $0.001130
+2024-09-24 14:19:09,301 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=848d4017-501c-423d-b48b-8a739fff004b

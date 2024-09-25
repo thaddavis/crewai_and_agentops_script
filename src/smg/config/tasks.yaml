@@ -1,17 +1,13 @@
-research_task:
+songwriting:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is 2024.
+    Write a song about giving 100% of your focus to improving the quality of your life through small daily improvements
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+    Output a song with lyrics and melody.
+  agent: songwriter 
 
-reporting_task:
+producing:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Output the chord progression and melody for the song so that the artist and engineer can record, program, and mix that song
   expected_output: >
-    A fully fledge reports with the mains topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    The lyrics, melody, and chord progression for the song clearly and simply outlined
+  agent: producer

@@ -18,10 +18,10 @@ def run():
     """
     Run the crew.
     """
-    inputs = {
-        'topic': 'AI LLMs'
-    }
-    SmgCrew().crew().kickoff(inputs=inputs)
+    # inputs = {
+    #     'topic': 'AI LLMs'
+    # }
+    SmgCrew().crew().kickoff()
 
 
 def train():
