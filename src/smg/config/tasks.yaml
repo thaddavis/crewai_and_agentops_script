@@ -1,6 +1,6 @@
 songwriting:
   description: >
-    Write a song about giving 100% of your focus to improving the quality of your life through small daily improvements
+    Write a song about total accountability
   expected_output: >
     Output a song with lyrics and melody.
   agent: songwriter 
