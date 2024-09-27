@@ -6,7 +6,7 @@ CrewAI is a Multi-Agent framework and AgentOps is an Agent Observability tool
 
 CrewAI is one of the leaders in their space as is AgentOps...
 
-For reference, here's a list showing the leading open source multi-agent frameworks ordered by GitHub stars
+For reference, here's a list showing the leading open source multi-agent frameworks ordered by GitHub stars as of September 27th, 2024...
 
 1. LangChain/LangGraph - 92.7k/5.8k stars - 81 contributors - 41.9k in Discord - https://github.com/langchain-ai/langgraph
 2. MetaGPT - 43.7k stars - 97 contributors - 5.1k in Discord - https://github.com/geekan/MetaGPT
@@ -34,35 +34,30 @@ And just so we get an overall view of the multi-agent landscape, let's rerank by
 
 https://www.linkedin.com/posts/adamsil_here-is-everything-that-you-need-to-know-activity-7241894867885293569-uvBt?utm_source=share&utm_medium=member_desktop
 
-And here's a list showing the leading open source Agent Observability tools ordered by GitHub stars
+And here is a list showing the leading open source Agent Observability tools ordered by GitHub stars
 
-1. LangFuse - 5.7k - 54 contributors - 1.7k in Discord - https://github.com/langfuse/langfuse
-2. AgentOps - 1.7k stars - 19 contributors - 2.3k in Discord - https://github.com/AgentOps-AI/agentops
-3. LangSmith - 379 stars - 36 contributors - 41.9k in Discord - https://github.com/langchain-ai/langsmith-sdk
+1. LangChain/LangSmith - 92.7k/379 stars - 36 contributors - 41.9k in Discord - https://github.com/langchain-ai/langsmith-sdk 
+2. LangFuse - 5.7k - 54 contributors - 1.7k in Discord - https://github.com/langfuse/langfuse
+3. AgentOps - 1.7k stars - 19 contributors - 2.3k in Discord - https://github.com/AgentOps-AI/agentops
 
 AND let's rerank by social media reach to get an overall view again...
 
-1. LangSmith - 379 stars - 36 contributors - 41.9k in Discord - https://github.com/langchain-ai/langsmith-sdk
+1. LangChain/LangSmith - 92.7k/379 stars - 36 contributors - 41.9k in Discord - https://github.com/langchain-ai/langsmith-sdk
 2. AgentOps - 1.7k stars - 19 contributors - 2.3k in Discord - https://github.com/AgentOps-AI/agentops
 3. LangFuse - 5.7k - 54 contributors - 1.7k in Discord - https://github.com/langfuse/langfuse
 
 If there are companies you would have liked to see on these lists that were left out please leave a comment...
 
-We will now show how YOU can use CrewAI w/ AgentOps FROM SCRATCH
+For the remainder of this walkthrough, we will show how YOU can use CrewAI w/ AgentOps in a "beginner friendly" way
 
-- We will start with an empty project
-- Then we'll create a Devcontainer so all our work is done inside of Docker
-  - Using a Devcontainer will allow you to easily replicate exactly what you see in this video
-  - AKA ->IF<- you want to code along, all you'll need to do is install VSCode & Docker on your machine
-  - If you DON'T want to code along you will still learn how CrewAI and AgentOps works if you pay attention closely...
-- After we have our Devcontainer set up, we will then build a super simple CrewAI project using 2 different approaches...
-  - 1) First, we will build a CrewAI project manually
-  - 2) and then Second, we will do so using the CrewAI CLI
+- 1) First, we'll build a team of agents manually (and show how to add monitoring with AgentOps)
+- 2) and then Second, we'll build a team of agents using the CrewAI CLI (and show how to add monitoring with AgentOps)
 
-- And after we build our CrewAI projects, we will then layer on AgentOps (in less than 30 seconds - it's super easy)
-  - Adding AgentOps will give us useful insights into how the agents in our "Crew" work
+- If you DON'T want to code along, you will still learn how CrewAI and AgentOps works by watching this video ...
+- BUT! If you DO want to code along tho, you'll need to install VSCode & Docker on your machine
 
-- And then finally, we'll go Super Saiyan and DEMO how YOU can customize a CrewAI project for your own purposes
-- In the DEMO, we'll make our agents resemble an acclaimed songwriting team that will be tasked with writing a #1 hit and we'll actually produce the song to see what it sounds like
+ALL THE CODE PRESENTED IS LINKED IN THE DESCRIPTION
 
-Silence is golden...
+- As a BONUS section at the end, we'll go Super Saiyan and task the 2nd team of agents we build to write us a hit song so we get a feel for how to experiment and adapt this technology to our own purposes
+
+*Silence is golden*

@@ -5,24 +5,40 @@ https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Meth
 First, let's create the following files & folders...
 
 ```
-mkdir -p src/crew_of_agents
-touch src/crew_of_agents/main.py 
+mkdir -p src/our_crew_of_agents
+touch src/our_crew_of_agents/main.py 
 ```
+
+When a file name ends in `.py` it indicates to us that it holds Python code...
 
 <!--
-Often when looking at a coding project, you'll see a file called something along the lines of "main"
+In Python projects, you'll often see a file called "main.py"
 
-In this walkthrough, `main.py` will be the file we run to launch our project which will contain code (or instructions) for running a group of Agents...
+In this walkthrough, `main.py` will be the file we run to launch our CrewAi project which will contain code (or instructions) for running a group of agents...
 
-Keep in mind, that we can call files, folders, and code snippets whatever we like when coding for example `blah.py`
+For the beginners watching, it's important to tell you that when programming, we can call files, folders, and many aspect of the code we write whatever we like.
 
-<mini blah.py DEMO>
+For example, we could name this file that launches our application `blah.py`
 
-Names are just labels BUT! JUST SO it's easy for others to understand, collaborate, and build on top of our code, we follow conventions and these conventions you learn over time by working with others...
--->
-
-```inside src/crew_of_agents/main.py let's place the following code
-print("Run a crew of agents...")
+```
+mv src/our_crew_of_agents/main.py src/our_crew_of_agents/blah.py
+print("Tell my crew of agents to do something")
+python blah.py
 ```
 
-TEST: `python src/crew_of_agents/main.py` √
+Right?
+
+Names are just labels. So there are an infinite number of ways to organize code in a project. In practice tho, so easy for us collectively to understand, collaborate, and build together, we follow conventions.
+
+These conventions are learned over time through experience and through working with others so be patient if you feel unfamiliar with what you're seeing...
+-->
+
+Let's rename blah.py back to main.py as that is more conventional...
+
+And make sure everything works...
+
+`mv src/our_crew_of_agents/blah.py src/our_crew_of_agents/main.py`
+
+TEST: `python src/our_crew_of_agents/main.py` √
+
+And everything works just the same...
