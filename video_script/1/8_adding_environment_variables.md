@@ -1,6 +1,6 @@
-This error is because we haven't authenticated our CrewAi project with OpenAI's platform
+This error is because we haven't authenticated our CrewAI project with OpenAI's platform
 
-CrewAi supports various LLMs for powering the agents in a crew but by default is set up to use OpenAI
+CrewAI supports various LLMs for powering the agents in a crew but by default is set up to use OpenAI
 
 If you're unfamiliar with the term LLM...
 
@@ -10,7 +10,7 @@ As of the time of recording, most LLM systems are designed to receive and genera
 
 The details of how an LLM works can be explored outside of this video if interested...
 
-Connecting our CrewAi project with OpenAI is simple.
+Connecting our CrewAI project with OpenAI is simple.
 
 All we have to do is sign up on OpenAI's platform: `https://platform.openai.com/`
 
@@ -28,7 +28,7 @@ Provision an API_KEY
 
 And make sure you keep this key private so no one besides you creates charges on your account
 
-And then here is how we securely add this key to our CrewAi project
+And then here is how we securely add this key to our CrewAI project
 
 ## Add environment variables
 

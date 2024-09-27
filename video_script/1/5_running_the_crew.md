@@ -20,7 +20,7 @@ So if we enter this instruction on our mini machine...
 
 - `pip install crewai==0.63.6`
 
-All of the Python code published to PyPi by the CrewAi team will be downloaded onto our "mini-machine"
+All of the Python code published to PyPi by the CrewAI team will be downloaded onto our "mini-machine"
 
 ## Let's run our crew again...
 

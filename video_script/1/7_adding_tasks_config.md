@@ -59,7 +59,7 @@ The way we let our crew know about the tasks outlined in this `tasks.yaml` confi
 
 Here we see we're designing our crew to consist of 2 agents that will work together to complete 2 tasks
 
-By default, CrewAi will execute tasks in the order they were listed in the `tasks.yaml` file one after the other sequentially
+By default, CrewAI will execute tasks in the order they were listed in the `tasks.yaml` file one after the other sequentially
 
 Here we can see that we're tasking TJ to write the declaration of independence and he will generate output in response to this task taking into account the expectations we've outlined in the "expected_output" config!
 
