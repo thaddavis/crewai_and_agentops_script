@@ -1,0 +1,68 @@
+In this video we'll introduce 2 new tools coming out of the Agent development world
+
+The 1st is CrewAI and the 2nd is AgentOps
+
+CrewAI is a Multi-Agent framework and AgentOps is an Agent Observability tool
+
+CrewAI is one of the leaders in their space as is AgentOps...
+
+For reference, here's a list showing the leading open source multi-agent frameworks ordered by GitHub stars
+
+1. LangChain/LangGraph - 92.7k/5.8k stars - 81 contributors - 41.9k in Discord - https://github.com/langchain-ai/langgraph
+2. MetaGPT - 43.7k stars - 97 contributors - 5.1k in Discord - https://github.com/geekan/MetaGPT
+3. AutoGen - 31.1k stars - 346 contributors - 19.7k in Discord - https://github.com/microsoft/autogen
+4. Flowise - 30.1k stars - 139 contributors - 1.2k in Discord - https://github.com/FlowiseAI/Flowise
+5. LangFlow - 29.5k stars - 162 contributors - 7.9k in Discord - https://github.com/langflow-ai/langflow
+6. CrewAI - 19.5k stars - 142 contributors - 7.6k on X.com - https://github.com/crewAIInc/crewAI
+7. Superagent - 5.1k stars - 66 contributors - 202 on Discord - https://github.com/superagent-ai/superagent
+8. Agent Zero - 4.3k stars - 6 contributors - 1,316 on Discord - https://github.com/frdel/agent-zero
+9. Agency Swarm - 2.4k stars - 10 contributors - 329 on Discord - https://github.com/VRSEN/agency-swarm
+10. ell - 3.7k stars - 19 contributors - 456 on Discord - https://github.com/MadcowD/ell
+
+And just so we get an overall view of the multi-agent landscape, let's rerank by social media reach...
+
+1. LangChain/LangGraph - 92.7k/5.8k stars - 81 contributors - 41.9k in Discord - https://github.com/langchain-ai/langgraph
+2. AutoGen - 31.1k stars - 346 contributors - 19.7k in Discord - https://github.com/microsoft/autogen
+3. LangFlow - 29.5k stars - 162 contributors - 7.9k in Discord - https://github.com/langflow-ai/langflow
+4. CrewAI - 19.5k stars - 142 contributors - 7.6k on X.com - https://github.com/crewAIInc/crewAI
+5. MetaGPT - 43.7k stars - 97 contributors - 5.1k in Discord - https://github.com/geekan/MetaGPT
+6. Agent Zero - 4.3k stars - 6 contributors - 1.3k on Discord - https://github.com/frdel/agent-zero
+7. Flowise - 30.1k stars - 139 contributors - 1.2k in Discord - https://github.com/FlowiseAI/Flowise
+8. ell - 3.7k stars - 19 contributors - 456 on Discord - https://github.com/MadcowD/ell
+9. Agency Swarm - 2.4k stars - 10 contributors - 329 on Discord - https://github.com/VRSEN/agency-swarm
+10. Superagent - 5.1k stars - 66 contributors - 202 on Discord - https://github.com/superagent-ai/superagent
+
+https://www.linkedin.com/posts/adamsil_here-is-everything-that-you-need-to-know-activity-7241894867885293569-uvBt?utm_source=share&utm_medium=member_desktop
+
+And here's a list showing the leading open source Agent Observability tools ordered by GitHub stars
+
+1. LangFuse - 5.7k - 54 contributors - 1.7k in Discord - https://github.com/langfuse/langfuse
+2. AgentOps - 1.7k stars - 19 contributors - 2.3k in Discord - https://github.com/AgentOps-AI/agentops
+3. LangSmith - 379 stars - 36 contributors - 41.9k in Discord - https://github.com/langchain-ai/langsmith-sdk
+
+AND let's rerank by social media reach to get an overall view again...
+
+1. LangSmith - 379 stars - 36 contributors - 41.9k in Discord - https://github.com/langchain-ai/langsmith-sdk
+2. AgentOps - 1.7k stars - 19 contributors - 2.3k in Discord - https://github.com/AgentOps-AI/agentops
+3. LangFuse - 5.7k - 54 contributors - 1.7k in Discord - https://github.com/langfuse/langfuse
+
+If there are companies you would have liked to see on these lists that were left out please leave a comment...
+
+We will now show how YOU can use CrewAI w/ AgentOps FROM SCRATCH
+
+- We will start with an empty project
+- Then we'll create a Devcontainer so all our work is done inside of Docker
+  - Using a Devcontainer will allow you to easily replicate exactly what you see in this video
+  - AKA ->IF<- you want to code along, all you'll need to do is install VSCode & Docker on your machine
+  - If you DON'T want to code along you will still learn how CrewAI and AgentOps works if you pay attention closely...
+- After we have our Devcontainer set up, we will then build a super simple CrewAI project using 2 different approaches...
+  - 1) First, we will build a CrewAI project manually
+  - 2) and then Second, we will do so using the CrewAI CLI
+
+- And after we build our CrewAI projects, we will then layer on AgentOps (in less than 30 seconds - it's super easy)
+  - Adding AgentOps will give us useful insights into how the agents in our "Crew" work
+
+- And then finally, we'll go Super Saiyan and DEMO how YOU can customize a CrewAI project for your own purposes
+- In the DEMO, we'll make our agents resemble an acclaimed songwriting team that will be tasked with writing a #1 hit and we'll actually produce the song to see what it sounds like
+
+Silence is golden...

@@ -1,3 +1,9 @@
+## CrewAI projects can get quite complicated BUT can can also be very simple
+
+- CrewAI organizes a lot of the configuration for the agents in your crew in the config folder...
+- So let's customize our crew by replacing the default "research" and "analyst" agent with the following agents
+
+```
 songwriter:
   role: >
     Songwriter
@@ -17,3 +23,4 @@ producer:
     You're an experienced music producer with a track record of producing hit songs across various genres. Your goal is to 
     output the chord progression, melody, and BPM for the song so that your engineer can program the instruments, the artist can perform the melody, 
     and the mixing engineer can then mix the song.
+```

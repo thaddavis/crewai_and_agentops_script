@@ -1,3 +1,0 @@
-2024-09-24 14:18:43,315 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=848d4017-501c-423d-b48b-8a739fff004b
-2024-09-24 14:19:09,296 - INFO - Analytics for this run - LLM calls: 2 | Tool calls: 0 | Actions: 0 | Errors: 0 | Duration: 24.3s | Cost: $0.001130
-2024-09-24 14:19:09,301 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=848d4017-501c-423d-b48b-8a739fff004b

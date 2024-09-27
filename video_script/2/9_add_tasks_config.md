@@ -1,3 +1,6 @@
+and the following tasks...
+
+```
 songwriting:
   description: >
     Write a song about total accountability
@@ -11,3 +14,4 @@ producing:
   expected_output: >
     The lyrics, melody, and chord progression for the song clearly and simply outlined
   agent: producer
+```
