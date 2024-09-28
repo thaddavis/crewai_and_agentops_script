@@ -1,4 +1,4 @@
-This error is because we haven't authenticated our CrewAI project with OpenAI's platform
+This error is happening because we haven't authenticated our CrewAI project with OpenAI's platform
 
 CrewAI supports various LLMs for powering the agents in a crew but by default is set up to use OpenAI
 
@@ -6,7 +6,7 @@ If you're unfamiliar with the term LLM...
 
 An LLM is the part of an agent responsible for generating output in response to some input
 
-As of the time of recording, most LLM systems are designed to receive and generate text but some are starting to be capable of accepting other forms of data as well...
+At the time of recording, most LLM systems are designed to receive and generate text but some are starting to be capable of accepting other forms of data as well...
 
 The details of how an LLM works can be explored outside of this video if interested...
 
@@ -14,21 +14,21 @@ Connecting our CrewAI project with OpenAI is simple.
 
 First, we have to sign up on OpenAI's platform: `https://platform.openai.com/`
 
-OpenAI pricing model is usage-based like a gas station. So you might need to add a couple dollars of credits to your account.
+OpenAI's pricing is usage-based like a gas station. So you might need to add a couple dollars of credits to your account.
 
 If you've never used OpenAI's platform, I'd suggest adding the minimum amount allowed as that should be more than enough for what we're doing here
 
-You can add more credits later as needed
+You can also add more credits later if needed
 
 `https://platform.openai.com/api-keys`
 
-After you have your platform account set up...
+After you have your OpenAI platform account set up...
 
-Provision an API_KEY
+You'll provision an API_KEY
 
-And make sure you keep this key private so no one besides you creates charges on your account
+Make sure you keep this key private so no one besides you creates charges on your account
 
-And then here is how we securely add this key to our CrewAI project
+And then here is how we securely add this API key to our CrewAI project
 
 ## Add environment variables
 
@@ -40,6 +40,8 @@ And then here is how we securely add this key to our CrewAI project
 from dotenv import load_dotenv
 load_dotenv()
 ```
+
+We have to load in our API_KEY BEFORE calling our agents so the API_KEY is ready for them to use it...
 
 As long as we never share the content of this .env file with any other person or system our OpenAI account is protected
 

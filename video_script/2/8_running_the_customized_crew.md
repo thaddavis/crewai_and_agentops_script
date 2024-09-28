@@ -1,12 +1,14 @@
 ## Run the crew again
 
-- Notice how, CrewAI allows us to pass dynamic values to our agents when we run them
+- Let's now try running the crew again...
 
-- For example instead of hard-coding all the requirements of our song in our config. We could make some aspects of them dynamic by inserting placeholders...
+- Before we do that though, let's take a look at the `main.py` file and notice how CrewAI allows us to pass dynamic values to our agents when we run them
+
+- For example instead of hard-coding all the requirements of our song in our config we could make some aspects of them dynamic by inserting placeholders...
 
 - For example, let's say we wanted to customize the genre...
 
-- We could place a placeholder in our config like so { genre } and CrewAI's framework will replace them with the values provided at kickoff
+- We could put a placeholder in our config like so { genre } and CrewAI's framework will replace them with the values provided at kickoff
 
 For example we could do something like this...
 
@@ -17,10 +19,10 @@ inputs = {
 FrequencyMusicCrewCrew().crew().kickoff(inputs=inputs)
 ```
 
-But let's keep it simple for this walkthroug. You can explore more of the advanced features offered by CrewAI if interested outside of this video...
+But let's keep it simple for this walkthroug. You can explore the advanced features offered by CrewAI outside of this video if interested...
 
 ```
-FrequencyMusicCrewCrew().crew().kickoff()
+FrequencyMusicCrew().crew().kickoff()
 ```
 
 Let's run the crew again: `crewai run`

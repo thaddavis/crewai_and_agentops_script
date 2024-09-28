@@ -51,20 +51,21 @@ These files are related to "Docker" and will help us create a little "mini-machi
 FROM python:3.12-slim
 RUN apt-get update && apt-get install -y build-essential
 WORKDIR /code # set the working directory
-# ENV PYTHONPATH=/code
 ```
+
+The details of what these files do will make sense over the course of this walkthrough...
 
 ## Build the Devcontainer
 
-Now that we have these files added we can launch our Devcontainer like so...
+Now that we have these files added we can launch our "mini-machine" or Devcontainer like so...
 
 SHIFT + COMMAND + P -> `Dev Containers: Reopen in Container`
 
-To gloss over the details, we are now in another "mini-computer" running on top of our computer. We can play around with CrewAI in this machine, close it when we're done, and then our base machine will be clean as if nothing ever happened.
+To gloss over the details, we are now in a "mini-computer" running on top of our computer. We can play around with CrewAI in this "mini-computer", close it when we're done, and then our base machine will be clean as if nothing ever happened.
 
-Let's run a quick test to make sure we are looking good.
+Let's run a quick test to make sure we're looking good.
 
-We created a Devcontainer with Python 3.12 installed as CrewAI is based on Python
+As CrewAI is a Python-based tool, we created a Devcontainer with Python installed (Python 3.12 to be exact)
 
 So let's make sure Python is working as expected
 
@@ -89,4 +90,4 @@ pwd
 
 the `pwd` command stands for "present working directory"
 
-For analogy, when you use the Graphical User Interface provided by your laptop or Desktop you're automatically placed in the "Desktop" folder of the file system on your machine
+For analogy, when you open your laptop or Desktop you're automatically placed in the "Desktop" folder of your file system

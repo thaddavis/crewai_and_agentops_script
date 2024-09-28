@@ -6,18 +6,20 @@
 
 - FileNotFoundError: [Errno 2] No such file or directory: '/code/src/our_crew_of_agents/config/agents.yaml'
 
-- The way CrewAI is designed requires us to specify a file called `agents.yaml` that will define how each agent in our group of agents works...
+- Hopefully it make sense that if we add a file called agents.yaml at this location on our "mini-machine" or devcontainer it'll go away
+
+- Moving forward I'll just be saying devcontainer...
+
+- The way CrewAI is designed requires us to specify this file that will hold the configuration of how each agent in our team or crew works...
 
 - https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#agentsyaml
 
-This `agents.yaml` file has to be placed in a specific location to work...
+So let's add this file at this exact location...
 
 - `mkdir -p src/our_crew_of_agents/config`
 - `touch src/our_crew_of_agents/config/agents.yaml`
 
-And it this `agents.yaml` file we place the configuration for the agents in our crew
-
-As of 9-27-2024 and crewai v0.64.0, the configuration of each agent in this file follows the specific structure shown here...
+As of 9-28-2024, the configuration of each agent in this file follows the specific structure shown here ...
 
 ```
 name_of_agent:
@@ -25,6 +27,10 @@ name_of_agent:
   goal: <TEXT_DESCRIBING_THE_GOAL_OF_THE_AGENT>
   backstory: <TEXT_DESCRIBING_THE_BACKSTORY_OF_THE_AGENT>
 ```
+
+This way of outlining system configuration is extremely common in programming and is called YAML format...
+
+YAML allows you to specify key-value pairs that can be nested as well as lists...
 
 For example, let's paste in this config for the agents in our crew...
 
@@ -54,17 +60,17 @@ thomas_jefferson:
 
 In the context of a .yaml file, the `>` is called a "folded block" symbol and it allows you to write your text on multiple lines instead of one big, long line 
 
-The way we connect this `agents.yaml` configuration to our crew is like so...
+The way we connect this `agents.yaml` config file to our crew in the crew.py file is like so...
 
-Inside our crew.py we have what is a called a "class"
+Inside our crew.py you can see we have what is a called a "class"...
 
 A class is in the context of programming is a blueprint for creating things.
 
 To use another cooking analogy...
 
-Imagine a recipe for making an amazing dish. The recipe tells us the ingredients and steps needed to make the dish, but it’s not the actual dish - it's just the instructions.
+Imagine a recipe for making an amazing dish. The recipe tells us the ingredients and steps needed to make the dish, but it’s not the actual dish - it's just the instructions for how to make it.
 
-Similarly, a "class" defines the ingredients and components of code. When we pass a class to the interpreter of a particular programming language, for example the Python interpreter, we get runnable code that is based on the blueprint outlined in the class that we can then use and interact with.
+Similarly, a "class" defines the ingredients and components of code. When we pass a class to the interpreter of a particular programming language, for example the Python interpreter, we get runnable code that is based on the blueprint outlined in the class
 
 ```
 @agent
@@ -81,7 +87,7 @@ def thomas_jefferson(self):
   )
 ```
 
-Here we see that we're designing our crew to consist of 2 agents (gw & tj) and just so we don't bloat this file with too many lines, we use the configuration found in the config folder to specify how each agent works
+Here we see that we're designing our crew to consist of 2 agents (gw & tj)
 
 ## Let's try running our crew again
 
@@ -92,5 +98,7 @@ Here we see that we're designing our crew to consist of 2 agents (gw & tj) and j
 ## Observe the error
 
 - FileNotFoundError: [Errno 2] No such file or directory: '/code/src/our_crew_of_agents/config/tasks.yaml'
+
+I wonder what this means...
 
 Dun, Dun, Dun...

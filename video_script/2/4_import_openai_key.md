@@ -4,11 +4,11 @@ Connecting a CrewAI project with OpenAI is simple.
 
 First we have to sign up on OpenAI's platform: `https://platform.openai.com/`
 
-OpenAI pricing model is usage-based like a gas station. So you might need to add a couple dollars of credits to your account.
+OpenAI pricing is usage-based like a gas station. So you might need to add a couple dollars of credits to your account.
 
-If you've never used OpenAI's platform, I'd suggest adding the minimum amount allowed as that should be more than enough for what we're doing here
+If you've never used OpenAI's platform, I'd suggest adding the minimum amount allowed as that should be more than enough for what we're doing
 
-You can add more credits later as needed
+You can always add more credits later if needed
 
 `https://platform.openai.com/api-keys`
 
@@ -18,7 +18,7 @@ Provision an API_KEY
 
 And make sure you keep this key private so no one besides you creates charges on your account
 
-Here is how we securely add this key to our CrewAI project
+Here is how we securely add this API KEY to our CrewAI project
 
 ## Add environment variables
 
@@ -33,7 +33,7 @@ load_dotenv()
 
 As long as we never share the content of this .env file with any other person or system, our OpenAI account is protected
 
-## Let's try running the crew...
+## Let's try running the crew again...
 
 - `crewai run`
 

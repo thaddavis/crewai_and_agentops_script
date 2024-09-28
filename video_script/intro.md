@@ -10,18 +10,28 @@ CrewAI is one of the leaders in their space as is AgentOps...
 
 (LOOK AWAY)
 
-For reference, here's a list showing the leading open source multi-agent frameworks ordered by GitHub stars as of September 27th, 2024...
+For reference, here's a list showing the leading open source multi-agent frameworks ordered by GitHub stars as of September 28th, 2024...
 
-1. LangChain/LangGraph - 92.7k/5.8k stars - 81 contributors - 41.9k in Discord - https://github.com/langchain-ai/langgraph
-2. MetaGPT - 43.7k stars - 97 contributors - 5.1k in Discord - https://github.com/geekan/MetaGPT
-3. AutoGen - 31.1k stars - 346 contributors - 19.7k in Discord - https://github.com/microsoft/autogen
-4. Flowise - 30.1k stars - 139 contributors - 1.2k in Discord - https://github.com/FlowiseAI/Flowise
-5. LangFlow - 29.5k stars - 162 contributors - 7.9k in Discord - https://github.com/langflow-ai/langflow
-6. CrewAI - 19.5k stars - 142 contributors - 7.6k on X.com - https://github.com/crewAIInc/crewAI
-7. Superagent - 5.1k stars - 66 contributors - 202 on Discord - https://github.com/superagent-ai/superagent
-8. Agent Zero - 4.3k stars - 6 contributors - 1,316 on Discord - https://github.com/frdel/agent-zero
-9. ell - 3.7k stars - 19 contributors - 456 on Discord - https://github.com/MadcowD/ell
-10. Agency Swarm - 2.4k stars - 10 contributors - 329 on Discord - https://github.com/VRSEN/agency-swarm
+1. LangChain/LangGraph - 92.7k/5.8k stars
+  - 81 contributors - 41.9k in Discord - https://github.com/langchain-ai/langgraph
+2. MetaGPT - 43.7k stars
+  - 97 contributors - 5.1k in Discord - https://github.com/geekan/MetaGPT
+3. AutoGen - 31.1k stars
+  - 346 contributors - 19.7k in Discord - https://github.com/microsoft/autogen
+4. Flowise - 30.1k stars
+  - 139 contributors - 1.2k in Discord - https://github.com/FlowiseAI/Flowise
+5. LangFlow - 29.5k stars
+  - 162 contributors - 7.9k in Discord - https://github.com/langflow-ai/langflow
+6. CrewAI - 19.5k stars
+  - 142 contributors - 7.6k on X.com - https://github.com/crewAIInc/crewAI
+7. Superagent - 5.1k stars
+  - 66 contributors - 202 on Discord - https://github.com/superagent-ai/superagent
+8. Agent Zero - 4.3k stars
+  - 6 contributors - 1,316 on Discord - https://github.com/frdel/agent-zero
+9. ell - 3.7k stars
+  - 19 contributors - 456 on Discord - https://github.com/MadcowD/ell
+10. Agency Swarm - 2.4k stars
+  - 10 contributors - 329 on Discord - https://github.com/VRSEN/agency-swarm
 
 <!-- And just so we get an overall view of the multi-agent landscape, let's rerank by social media reach...
 
@@ -38,7 +48,7 @@ For reference, here's a list showing the leading open source multi-agent framewo
 
 https://www.linkedin.com/posts/adamsil_here-is-everything-that-you-need-to-know-activity-7241894867885293569-uvBt?utm_source=share&utm_medium=member_desktop
 
-And here is a list showing the leading open source Agent Observability tools ordered by GitHub stars
+And here is a list showing the leading open source Agent Observability tools ordered by GitHub stars as well
 
 1. LangChain/LangSmith - 92.7k/379 stars - 36 contributors - 41.9k in Discord - https://github.com/langchain-ai/langsmith-sdk 
 2. LangFuse - 5.7k - 54 contributors - 1.7k in Discord - https://github.com/langfuse/langfuse
@@ -52,18 +62,49 @@ And here is a list showing the leading open source Agent Observability tools ord
 
 (LOOK CAMERA)
 
-If there are companies you would have liked to see on these lists that were left out please leave a comment...
+If there are companies that should have been on these lists please let me know in the comments...
 
 (CUT)
 
+For the remainder of this video, we'll DEMO how YOU can use CrewAI w/ AgentOps via 2 beginner-friendly examples
 
-In the remaining parts of this video, we will show how YOU can use CrewAI w/ AgentOps via 2 beginner friendly DEMOs
+- 1) In DEMO #1, we'll build a team of agents from scratch manually so we get a solid understanding of how CrewAI works (and we'll also set up monitoring with AgentOps)
+- 2) In DEMO #2, we'll build a team of agents using the CrewAI CLI and task them with writing us a hit song (that we'll actually make to see what it sounds like) (we'll be integrating AgentOps into this 2nd group of agents for monitoring as well). Using the CrewAI CLI is the recommended approach for how to build CrewAI-based projects.
 
-- 1) In DEMO #1, we'll build a team of agents manually (and show how to monitor them with AgentOps)
-- 2) and in DEMO #2, we'll build a team of agents using the CrewAI CLI and task them with writing us a hit song that we'll actually make to see what it sounds like
+- IF you want to code along, you'll need to install VSCode & Docker Desktop onto your machine
 
-- IF you want to code along, you'll need to install VSCode & Docker onto your machine
+- Installing these 2 tools is FREE and should only take a few clicks and a few minutes as they both offer extremely easy-to-use installation processes with support for Mac, Windows, and Linux.
 
-ALL THE CODE PRESENTED IS LINKED IN THE DESCRIPTION
+- I'll be using Mac in this video but the general process of what we'll be doing will be the same for Windows and Linux
 
-*Silence is golden*
+- I'll quickly show how I installed these 2 tools on Mac so you get a feel for how easy this is BUT if your experience is not as straightforward, I recommend entering descriptions of your issues into Google and ChatGPT for help
+
+- Here's how to download and install Docker Desktop on Mac...
+- Go to the official download page
+  - https://www.docker.com/products/docker-desktop/
+- Download the appropriate version
+  - for me this is Apple Silicon
+- Double click the downloaded file and you'll be presented with a window to add Docker Desktop to your Applications folder
+- AND THAT'S IT
+
+- Here's how to download and install VSCode on Mac...
+- Go to the official download page linked in the Description
+  - https://code.visualstudio.com/Download
+- Download the appropriate version
+  - for me it's Apple Silicon
+- Unzip the .zip file
+- Drag the unzipped application into your Applications folder
+- AND THAT'S IT
+
+- IT'S THAT EASY: https://www.youtube.com/watch?v=v83ckl-5i8Q&t=26s
+
+Finally, you will need to add the following extensions to your VSCode editor once it's installed
+
+You can come over to the Extensions Marketplace available in the side menu and install...
+
+- the Docker extension (id: ms-azuretools.vscode-docker)
+  - you should see a button to install it in one click
+- and the "Dev Containers" extension (id: ms-vscode-remote.remote-containers)
+  - you should also see a button to install it in one click
+
+- AS USUAL, ALL THE CODE PRESENTED IS LINKED IN THE DESCRIPTION IN A PUBLIC GITHUB REPO

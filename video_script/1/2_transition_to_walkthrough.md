@@ -4,9 +4,7 @@ Let's build a CrewAI project using a manual approach
 
 This is NOT the recommended way to build production-grade CrewAI projects
 
-BUT!
-
-building up a CrewAI project from scratch is great for learning how CrewAI works...
+BUT! building up a CrewAI project from scratch is great for learning how CrewAI works...
 
 Here on CrewAI's documentation they provide an outline of what a CrewAI application looks like so let's take a look...
 

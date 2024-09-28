@@ -1,6 +1,6 @@
 ## CrewAI projects can get quite complicated BUT can can also be very simple
 
-- So let's customize our crew by replacing the default "research" and "analyst" agent with the following agents
+- So let's customize our crew by replacing the default "research" and "analyst" agents with the following agents
 
 ```
 songwriter:
@@ -24,7 +24,7 @@ producer:
     and the mixing engineer can then mix the song.
 ```
 
-and the default tasks with these ones...
+and let's also replace the default tasks provided by the generated project with these ones...
 
 ```
 songwriting:
