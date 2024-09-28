@@ -29,7 +29,7 @@ agentops.init(os.getenv("AGENTOPS_API_KEY"))
 Be sure to initialize AgentOps BEFORE calling your crew so things are tracked properly...
 
 - Observe how VSCode is letting us know the `agentops` import has an issue
-- This is because we haven't yet downloaded the code published by AgentOps from PyPi
+- This is because we haven't yet downloaded the package of code published by the AgentOps team on PyPi
 - So..., just like we did for the `crewai` package let's install `agentops`
 - `pip install agentops==0.3.12`
 

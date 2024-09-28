@@ -58,6 +58,6 @@ For the remainder of this walkthrough, we will show how YOU can use CrewAI w/ Ag
 
 ALL THE CODE PRESENTED IS LINKED IN THE DESCRIPTION
 
-- As a BONUS section at the end, we'll go Super Saiyan and task the 2nd team of agents we build to write us a hit song so we get a feel for how to experiment and adapt this technology to our own purposes
+- Stay tuned till the end, where we task the 2nd team of agents we build with writing us a hit song that we'll actually make to see what it sounds like
 
 *Silence is golden*

@@ -12,13 +12,13 @@ The details of how an LLM works can be explored outside of this video if interes
 
 Connecting our CrewAI project with OpenAI is simple.
 
-All we have to do is sign up on OpenAI's platform: `https://platform.openai.com/`
+First, we have to sign up on OpenAI's platform: `https://platform.openai.com/`
 
-OpenAI pricing model is pay as you use like a gas station. So you might need add a couple dollars of credits to your account.
+OpenAI pricing model is usage-based like a gas station. So you might need to add a couple dollars of credits to your account.
 
-If you've never used OpenAI's platform, I'd suggest adding the minimum amount allowed to save money
+If you've never used OpenAI's platform, I'd suggest adding the minimum amount allowed as that should be more than enough for what we're doing here
 
-And you can add more credits later as needed
+You can add more credits later as needed
 
 `https://platform.openai.com/api-keys`
 

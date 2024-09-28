@@ -27,7 +27,7 @@ In the spirit of beginner friendliness we will avoid getting unnecesssarily tech
 
 ```devcontainer.json
 {
-  "name": "CrewAI + AgentOps (Beginner Friendly Pt. 1)",
+  "name": "CrewAI + AgentOps (Pt. 1)",
   "build": {
     "dockerfile": "../Dockerfile.dev"
   },
