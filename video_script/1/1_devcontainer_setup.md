@@ -1,6 +1,6 @@
 ## SHOW THE BOILERPLATE DIAGRAM
 
-Alright! Here we go! From scratch! Learn CrewAI & AgentsOps in a beginner friendly way!
+Alright! Here we go! From scratch! CrewAI & AgentsOps!
 
 Here we have a empty folder somewhere on our computer as our starting point...
 
@@ -17,9 +17,9 @@ mkdir .devcontainer
 touch .devcontainer/devcontainer.json
 touch Dockerfile.dev
 
-If you've never seen these files before, they might seem strange, but they are related to a tool called "Docker"
+If you've never seen these files before, they might seem strange, but they're related to a popular tool called "Docker"
 
-In the spirit of beginner friendliness we will avoid getting unnecesssarily technical, so for practical purposes just know that we are using Docker because it helps us stay organized and will make it easy for YOU to replicate what you see in this video on your machine. 
+In the spirit of beginner friendliness we will avoid getting too technical, so for practical purposes just know that we are using Docker because it helps us stay organized.
 
 ## `devcontainer.json` file
 
@@ -53,7 +53,7 @@ In the spirit of beginner friendliness we will avoid getting unnecesssarily tech
 
 ## `Dockerfile.dev` file
 
-- Here is the content to paste into the `Dockerfile.dev` file
+- and here is the content to paste into the `Dockerfile.dev` file...
 
 ```.Dockerfile.dev
 FROM python:3.12-slim
@@ -68,19 +68,19 @@ Alrighty, now that we have these files set up we can launch our "Devcontainer" l
 
 SHIFT + COMMAND + P -> `Dev Containers: Reopen in Container`
 
-To gloss over the details, we are now building a "mini-computer" that will run on top of our actual computer. We can play around with CrewAI in this "mini-computer", close it when we're done, and then our base machine (aka our laptop / or Desktop / or whatever machine you're using) will be clean as if nothing ever happened.
+To gloss over the details, we are now building a "mini-computer" that will run on top of our actual computer. We can play around with CrewAI in this "mini-computer", close it when we're done, and then our base machine (aka our laptop / or Desktop) will be clean as if nothing ever happened.
 
 Once again the reason why we are doing this is because over the long term it help us stay organized.
 
-If you have another approach you prefer better than working in Devcontainers, leave a comment so I'm aware.
+If you know of a better approach than working in Devcontainers, leave a comment so I'm aware.
 
-After building your Devcontainer you should see a new container listed in Docker...
+After building the Devcontainer we should see a new container listed in Docker...
 
 Let's run a quick test and make sure we're looking good.
 
 As CrewAI is a tool built on top of Python, let's make sure we have Python installed
 
-If you take a quick look at the content of the `Dockerfile` you can see we asked Docker to build us a "mini-machine" with Python 3.12 installed on it PLUS some extra C++ libraries that we will need
+If you take a quick look at the content of the `Dockerfile` you can see we asked Docker to build us a "mini-machine" with Python 3.12 installed on it (PLUS some extra C++ libraries that we will need)
 
 The remaining lines...
   A - tell Docker where in the file system of this "mini-machine" we want to work
@@ -88,9 +88,7 @@ The remaining lines...
 
 The Python interpreter is a tool that reads Python code and executes it for us
 
-Here we are now inside our Devcontainer aka our "mini-machine"...
-
-This "mini-machine" has it's own file system so let's make sure we are where we want to be...
+After our Devcontainer is built, let's make sure it works as we expect
 
 ```.py
 pwd
