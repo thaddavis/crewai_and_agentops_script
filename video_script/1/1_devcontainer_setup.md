@@ -4,22 +4,22 @@ Alright! Here we go! From scratch! CrewAI! AgentsOps!
 
 Here we have an empty folder somewhere on our computer as our starting point...
 
-First, we're going to set ourselves up so we have a solid foundation to build on top of...
+First, we're going to set ourselves up so we have a solid foundation to build this CrewAI application on top of...
 
-This is the 1st set of files we'll add to this empty folder...
+Or I should say, I find this foundation to be very solid but let me know what you think in the comments...
 
 project_root/
 ├── .devcontainer/
 │   └── devcontainer.json
 └── Dockerfile.dev
 
+(PAUSE)
+
+Let's start by adding the following folder and files to this empty project
+
 mkdir .devcontainer
 touch .devcontainer/devcontainer.json
 touch Dockerfile.dev
-
-If you've never seen these files before, they're related to a popular tool called "Docker"
-
-To stay beginner-friendly we'll avoid getting too technical, but just know, that we're using Docker to stay organized.
 
 ## `devcontainer.json` file
 
@@ -27,7 +27,7 @@ To stay beginner-friendly we'll avoid getting too technical, but just know, that
 
 ```devcontainer.json
 {
-  "name": "CrewAI + AgentOps (Pt. 1)",
+  "name": "CrewAI + AgentOps (DEMO 1)",
   "build": {
     "dockerfile": "../Dockerfile.dev"
   },
@@ -51,7 +51,7 @@ To stay beginner-friendly we'll avoid getting too technical, but just know, that
 }
 ```
 
-Over the course of this video you'll understand what the content of this file means...
+You'll understand what the content of this file does shortly...
 
 ## `Dockerfile.dev` file
 
@@ -64,7 +64,7 @@ WORKDIR /code # set the working directory
 ENV PYTHONPATH=/code
 ```
 
-Likewise, over the course of this video you'll understand what the content of this file means...
+You'll understand what the content of this file does shortly as well...
 
 ## Build the Devcontainer
 
@@ -72,25 +72,27 @@ Alrighty, now that we have these files set up we can launch our Devcontainer...
 
 (LOOK CAMERA)
 
-To gloss over the details, when I say "launch our Devcontainer" I mean we're going to build a "mini-computer" / or "mini-machine" that will run on top of our actual computer. We can play around with CrewAI in this "mini-machine", close it when we're done, and then our base machine (aka our laptop or Desktop or whatever we're using) will be clean as if nothing ever happened.
+We won't go into detail, but when I say "launch our Devcontainer" I mean we're going to build a virtual "mini-computer" that will run on top of our actual computer. We are going to play around with CrewAI in this "mini-computer", close it when we're done, and then our base machine (aka our laptop or Desktop or whatever we're using) will be clean as if nothing ever happened.
 
-Here's how we launch the Devcontainer...
+AKA this is a development approach that allows us to experiment with new software and NOT clutter our machine
+
+(PAUSE)
+
+Here's how we build the Devcontainer...
 
 In VSCode we type...
 
 SHIFT + COMMAND + P -> `Dev Containers: Reopen in Container`
 
-Once again the reason why we're doing this is because over the long term it help us stay organized.
+(PAUSE)
 
-If you know of a better approach than working in Devcontainers, leave a comment so I'm aware.
+After building the Devcontainer is built we should see a new container listed in the Docker Desktop GUI...
 
-After building the Devcontainer we should see a new container listed in the Docker Desktop GUI...
+(PAUSE)
 
 Let's quickly test out this Development Container and make sure we're looking good...
 
 As CrewAI is a tool built on top of Python, let's make sure we have Python installed
-
-Let's make sure Python is working as expected...
 
 ```.py
 python --version
@@ -101,7 +103,7 @@ python main.py
 
 The Python interpreter is a program that reads instructions written in the Python programming language and executes them
 
-So here we are passing the main.py file to the Python interpreter and it prints out the text "Hello World"
+So here we are passing the main.py file to the Python interpreter and we can see it prints out the text "Hello World"
 
 GREAT!
 

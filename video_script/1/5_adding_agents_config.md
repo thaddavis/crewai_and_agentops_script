@@ -2,16 +2,16 @@
 
 - FileNotFoundError: [Errno 2] No such file or directory: '/code/src/our_crew_of_agents/config/agents.yaml'
 
-- The way CrewAI is designed requires us to include this file and populate it with the configuration of how each agent in our team or crew works...
+- The way CrewAI is designed requires us to include an `agents.yaml` file at a specific location
 
 - https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#agentsyaml
 
-So let's add this file at this exact location...
+Let's add this file like so...
 
 - `mkdir -p src/our_crew_of_agents/config`
 - `touch src/our_crew_of_agents/config/agents.yaml`
 
-and paste in this config...
+and paste in the following...
 
 ```.yaml
 george_washington:
@@ -37,7 +37,9 @@ thomas_jefferson:
     United States.
 ```
 
-As of 9-28-2024, the configuration of each agent in this `agents.yaml` file follows the structure shown here ...
+Around the time of recording, in October 2024, the official structure for the content of this `agents.yaml` file follows the structure shown here ...
+
+- https://docs.crewai.com/core-concepts/Agents/
 
 ```
 name_of_agent:
@@ -46,23 +48,15 @@ name_of_agent:
   backstory: <TEXT_DESCRIBING_THE_BACKSTORY_OF_THE_AGENT>
 ```
 
-This way of outlining system configuration is extremely common in programming and is called YAML format...
+There are other properties beside the role, goal, and backstory we can give to our agents, but these are the ones required by CrewAI's framework...
 
-YAML allows you to specify key-value pairs that can be nested as well as lists...
+FYI: This way of outlining configuration is extremely common in programming and is called YAML format...
 
-In the context of a .yaml file, the `>` is called a "folded block" symbol and it allows you to write your text on multiple lines instead of one big, long line 
+YAML allows you to specify key-value pairs of information that can be nested at various levels...
+
+In the context of a .yaml file, the `>` (angled bracket-like) character is called a "folded block" symbol. This character allows you to write the value associated with a key or property on multiple lines instead of one big, long line 
 
 The way we connect this `agents.yaml` config to our crew in the `crew.py` file is like this...
-
-Inside `crew.py` you can see we have what is a called a "class"...
-
-A class in the context of programming is a blueprint for creating things.
-
-To use another cooking analogy...
-
-Imagine a recipe for making an amazing dish. The recipe tells us the ingredients and steps needed to make the dish, but it’s not the actual dish - it's just the instructions for how to make it.
-
-Similarly, a "class" defines the ingredients and components of code. When we pass a class to the interpreter of a particular programming language, for example the Python interpreter, we get runnable code that is based on the blueprint outlined in the class
 
 ```
 @agent
@@ -79,11 +73,21 @@ def thomas_jefferson(self):
   )
 ```
 
-And zooming out, we can see that we're designing our crew to consist of 2 agents (gw & tj)
+Zooming out, you can see what we have here is a called a "class"...
+
+A class in the context of programming is a blueprint for creating things.
+
+To use another cooking analogy...
+
+Imagine a recipe for making an amazing dish. The recipe tells us the ingredients and steps needed to make the dish, but it’s not the actual dish - it's just the instructions for how to make it.
+
+Similarly, a "class" defines the ingredients (or components) of code. When we pass a class to the interpreter of a particular programming language, for example the Python interpreter, we get runnable code that is based on the blueprint outlined in the class
+
+So, in this class, we can see we're designing our crew to consist of 2 agents (gw & tj)
 
 ## Let's try running our crew again
 
-- Now that we've defined our agents let's try running them again...
+- Now that we've defined the details of the agents in our crew, let's try running them again...
 
 - `python src/our_crew_of_agents/main.py`
 

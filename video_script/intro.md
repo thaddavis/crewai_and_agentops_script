@@ -68,24 +68,32 @@ If there are other companies that should have been on these lists please let me 
 
 For the remainder of this video, we'll DEMO how YOU can use CrewAI w/ AgentOps via 2 beginner-friendly examples
 
-- 1) In DEMO #1, we'll build a team of agents from scratch manually so we get a solid understanding of how CrewAI works (plus we'll also show how to include monitoring w/ AgentOps)
-- 2) In DEMO #2, we'll build a team of agents using the CrewAI CLI and task them with writing us a hit song (that we'll actually make to see what it sounds like) and we'll be integrating AgentOps into this 2nd group of agents for monitoring as well. Using the CrewAI CLI is the recommended approach for how to build CrewAI-based projects.
+- 1) In DEMO #1, we'll build a team of agents from scratch manually so we get a solid understanding of how CrewAI works (plus we'll add monitoring w/ AgentOps)
+- 2) In DEMO #2, we'll build a team of agents using the CrewAI CLI and task them with writing us a hit song (that we'll actually make at the end of this video to see what it sounds like). Using the CrewAI CLI is the recommended approach for how to build CrewAI-based projects. We'll be integrating AgentOps into this 2nd group of agents for monitoring as well.
+
+(PAUSE)
+
+(Look at camera)
 
 - IF you want to code along step-by-step, you'll need to install 2 tools onto your machine: VSCode & Docker Desktop
 
-- Both of these 2 tools are FREE and should only take a few clicks and a few minutes to install as they offer extremely easy-to-use installation processes with support for Mac, Windows, and Linux.
+- Both of these tools are FREE and should only take a few clicks and a few minutes to install as they offer extremely easy-to-use installation processes with support for Mac, Windows, and Linux.
 
 - I'll be using Mac in this video but the general process of what we'll be doing will be the same for Windows and Linux. 
 
 - Let me quickly show how I installed these 2 tools on Mac so you get a feel for how easy it was for me BUT if your experience is not as straightforward and you get stuck, please leave a comment so I'm aware or try entering descriptions of your issues into Google or ChatGPT for help troubleshooting
+
+(PAUSE)
 
 - Here's how to download and install Docker Desktop on Mac...
 - Go to the official download page
   - https://www.docker.com/products/docker-desktop/
 - Download the appropriate version for your machine
   - for me this is Apple Silicon
-- Double click the downloaded file and you'll be presented with a window to add Docker Desktop to your Applications folder
+- Double click the downloaded file and you'll be presented with a window for adding Docker Desktop to your Applications folder
 - AND THAT'S IT
+
+(PAUSE)
 
 - Here's how to download and install VSCode on Mac...
 - Go to the official download page linked in the Description
@@ -98,13 +106,13 @@ For the remainder of this video, we'll DEMO how YOU can use CrewAI w/ AgentOps v
 
 - IT'S THAT EASY: https://www.youtube.com/watch?v=v83ckl-5i8Q&t=26s
 
-Finally, you will need to add the following extensions to VSCode once it's installed
+(PAUSE)
 
-After opening VSCode, you can come over to the Extensions Marketplace available in the side menu and install:
+After installing VSCode, you'll need to do one last thing, open VSCode and come over to the Extensions Marketplace available in the side menu and install:
 
 - A) the Docker extension (id: ms-azuretools.vscode-docker)
   - type "Docker" in the search bar and after finding it in the panel you should see a button to install it in one click
 - and B) the "Dev Containers" extension (id: ms-vscode-remote.remote-containers)
-  - type "Dev Containers" in the search bar and after finding it in the panel you should also see a button to install it in one click
+  - type "Dev Containers" in the search bar and after finding it in the panel you should see a button to install it in one click
 
 - ALL OF THE CODE PRESENTED IS LINKED IN A PUBLIC GITHUB REPO

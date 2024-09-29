@@ -21,7 +21,7 @@ These files are related to "Docker" and will help us create a little "mini-machi
 
 ```devcontainer.json
 {
-  "name": "CrewAI + AgentOps (Pt. 2)",
+  "name": "CrewAI + AgentOps (DEMO 2)",
   "build": {
     "dockerfile": "../Dockerfile.dev"
   },
