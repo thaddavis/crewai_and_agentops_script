@@ -4,7 +4,7 @@ Ok! Here we go! Starting from scratch (aka an empty folder)...
 
 ## SHOW THE BOILERPLATE DIAGRAM
 
-This is the 1st set of files that we will add...
+This is the 1st set of files that we'll add to this empty folder...
 
 project_root/
 ├── .devcontainer/
@@ -15,7 +15,7 @@ mkdir .devcontainer
 touch .devcontainer/devcontainer.json
 touch Dockerfile.dev
 
-These files are related to "Docker" and will help us create a little "mini-machine" or sandbox running on top of our base machine so we stay organized...
+These files are related to "Docker" and will help us create a little "mini-machine" or development sandbox running on top of our base machine so we stay organized...
 
 ## Populate `devcontainer.json`
 
@@ -50,24 +50,21 @@ These files are related to "Docker" and will help us create a little "mini-machi
 ```.Dockerfile.dev
 FROM python:3.12-slim
 RUN apt-get update && apt-get install -y build-essential
-WORKDIR /code # set the working directory
 ```
-
-The details of what these files do will make sense over the course of this walkthrough...
 
 ## Build the Devcontainer
 
-Now that we have these files added we can launch our "mini-machine" or Devcontainer like so...
+Now that we have these files added we can launch our "mini-machine" or Development container like so...
 
 SHIFT + COMMAND + P -> `Dev Containers: Reopen in Container`
 
-To gloss over the details, we are now in a "mini-computer" running on top of our computer. We can play around with CrewAI in this "mini-computer", close it when we're done, and then our base machine will be clean as if nothing ever happened.
+To gloss over the details, we are now in a "mini-computer" running on top of our computer. We can play around with CrewAI in this "mini-computer", close it when we're done, and then our base machine (aka our laptop or Desktop or whatever we're using) will be clean as if nothing ever happened.
 
 Let's run a quick test to make sure we're looking good.
 
-As CrewAI is a Python-based tool, we created a Devcontainer with Python installed (Python 3.12 to be exact)
+As CrewAI is a Python-based tool, and we created a Devcontainer with Python installed (Python 3.12 to be exact)
 
-So let's make sure Python is working as expected
+Let's make sure Python is working as expected
 
 ```.py
 python --version
@@ -82,12 +79,12 @@ python main.py
 rm main.py
 ```
 
-And you can see we're automatically in the location we specified in in the .devcontainer.json file...
+And let's double check that we're in the location we specified in the .devcontainer.json file...
 
 ```.py
 pwd
 ```
 
-the `pwd` command stands for "present working directory"
+And we are √
 
-For analogy, when you open your laptop or Desktop you're automatically placed in the "Desktop" folder of your file system
+the `pwd` command stands for "present working directory"

@@ -4,11 +4,13 @@ CrewAI supports various LLMs for powering the agents in a crew but by default is
 
 If you're unfamiliar with the term LLM...
 
-An LLM is the part of an agent responsible for generating output in response to some input
+An LLM is the part of an agent we would most likely call it's brain...
 
 At the time of recording, most LLM systems are designed to receive and generate text but some are starting to be capable of accepting other forms of data as well...
 
-The details of how an LLM works can be explored outside of this video if interested...
+The details of how an LLM works can be explored outside of this video if your interested...
+
+For our purposes, we will be calling an LLM powered by OpenAI via their API each time an agent in our crew need to perform a task assigned to it...
 
 Connecting our CrewAI project with OpenAI is simple.
 
@@ -18,7 +20,7 @@ OpenAI's pricing is usage-based like a gas station. So you might need to add a c
 
 If you've never used OpenAI's platform, I'd suggest adding the minimum amount allowed as that should be more than enough for what we're doing here
 
-You can also add more credits later if needed
+You can always add more credits later if needed
 
 `https://platform.openai.com/api-keys`
 
@@ -41,11 +43,11 @@ from dotenv import load_dotenv
 load_dotenv()
 ```
 
-We have to load in our API_KEY BEFORE calling our agents so the API_KEY is ready for them to use it...
+In `main.py`, we have to load in our API_KEY BEFORE calling our agents so the API key is ready for them to use...
 
-As long as we never share the content of this .env file with any other person or system our OpenAI account is protected
+As long as we never share the content of this .env file with any other person or system, our OpenAI account is protected from abuse by others
 
-## Try running the crew again - THIS SHOULD WORK 🤞
+## If we run the crew again - THIS SHOULD WORK - and indeed it does 🤞
 
 - `python src/our_crew_of_agents/main.py`
 

@@ -2,6 +2,8 @@
 
 - So let's customize our crew by replacing the default "research" and "analyst" agents with the following agents
 
+https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#agentsyaml
+
 ```
 songwriter:
   role: >
@@ -25,6 +27,8 @@ producer:
 ```
 
 and let's also replace the default tasks provided by the generated project with these ones...
+
+https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#tasksyaml
 
 ```
 songwriting:

@@ -1,25 +1,23 @@
-Ok! The way we built this crew of agents manually up from scratch is NOT recommended at all.
+The way we built this crew of agents manually up from scratch is NOT recommended at all.
 
 BUT for understanding how CrewAI works I hope you found it useful.
 
 As a final quick step for understanding how CrewAI works, let's track our agents using AgentOps...
 
-AgentOps is compatible with many different multi-agent frameworks including CrewAI and will help us track...
+AgentOps is compatible with many different multi-agent frameworks including CrewAI and will help us track things like...
 
 A) The cost of each agent in our crew
-B) The time each agent takes to complete its tasks and
+B) The time each agent takes to complete its tasks or
 C) Any errors encountered when executing the tasks given to our crew
 
-and more...
-
-The process of integrating AgentOps is similar to how we integrated with OpenAI
+The process of integrating AgentOps very easy and is similar to how we integrated OpenAI
 
 - We go to https://app.agentops.ai/ and create an account
 - Provision an API key
 - and then add another secret API KEY on a new line in the .env file of our project
 - this one will be called AGENTOPS_API_KEY
 - `echo "AGENTOPS_API_KEY=" >> .env`
-- The final thing to do after that is add the following lines to our `main.py` file
+- The final thing to do after that is to add the following lines to our `main.py` file
 ```
 import os
 import agentops
@@ -27,10 +25,10 @@ import agentops
 agentops.init(os.getenv("AGENTOPS_API_KEY"))
 ```
 
-Be sure to initialize AgentOps BEFORE calling your crew so that tracking is setup before kicking off your tasks
+Be sure to initialize AgentOps BEFORE calling your crew so that tracking is set up before running tasks
 
 - And now observe how VSCode, our editor, is letting us know the `agentops` import has an issue
-- This is because we haven't yet downloaded the `agentsops` package published by the AgentOps team on PyPi
+- This is because we haven't yet downloaded the `agentsops` package published by the AgentOps team from PyPi
 - So..., just like we did for the `crewai` package let's install `agentops`
 - `pip install agentops==0.3.12`
 

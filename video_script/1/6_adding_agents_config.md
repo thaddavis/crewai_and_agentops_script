@@ -1,16 +1,8 @@
-## Let's run our crew again...
-
-- `python src/our_crew_of_agents/main.py`
-
 ## Observe the error
 
 - FileNotFoundError: [Errno 2] No such file or directory: '/code/src/our_crew_of_agents/config/agents.yaml'
 
-- Hopefully it make sense that if we add a file called agents.yaml at this location on our "mini-machine" or devcontainer it'll go away
-
-- Moving forward I'll just be saying devcontainer...
-
-- The way CrewAI is designed requires us to specify this file that will hold the configuration of how each agent in our team or crew works...
+- The way CrewAI is designed requires us to include this file and populate it with the configuration of how each agent in our team or crew works...
 
 - https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#agentsyaml
 
@@ -19,20 +11,7 @@ So let's add this file at this exact location...
 - `mkdir -p src/our_crew_of_agents/config`
 - `touch src/our_crew_of_agents/config/agents.yaml`
 
-As of 9-28-2024, the configuration of each agent in this file follows the specific structure shown here ...
-
-```
-name_of_agent:
-  role: <TEXT_DESCRIBING_THE_ROLE_OF_THE_AGENT_IN_THE_CREW>
-  goal: <TEXT_DESCRIBING_THE_GOAL_OF_THE_AGENT>
-  backstory: <TEXT_DESCRIBING_THE_BACKSTORY_OF_THE_AGENT>
-```
-
-This way of outlining system configuration is extremely common in programming and is called YAML format...
-
-YAML allows you to specify key-value pairs that can be nested as well as lists...
-
-For example, let's paste in this config for the agents in our crew...
+and paste in this config...
 
 ```.yaml
 george_washington:
@@ -58,13 +37,26 @@ thomas_jefferson:
     United States.
 ```
 
+As of 9-28-2024, the configuration of each agent in this `agents.yaml` file follows the structure shown here ...
+
+```
+name_of_agent:
+  role: <TEXT_DESCRIBING_THE_ROLE_OF_THE_AGENT_IN_THE_CREW>
+  goal: <TEXT_DESCRIBING_THE_GOAL_OF_THE_AGENT>
+  backstory: <TEXT_DESCRIBING_THE_BACKSTORY_OF_THE_AGENT>
+```
+
+This way of outlining system configuration is extremely common in programming and is called YAML format...
+
+YAML allows you to specify key-value pairs that can be nested as well as lists...
+
 In the context of a .yaml file, the `>` is called a "folded block" symbol and it allows you to write your text on multiple lines instead of one big, long line 
 
-The way we connect this `agents.yaml` config file to our crew in the crew.py file is like so...
+The way we connect this `agents.yaml` config to our crew in the `crew.py` file is like this...
 
-Inside our crew.py you can see we have what is a called a "class"...
+Inside `crew.py` you can see we have what is a called a "class"...
 
-A class is in the context of programming is a blueprint for creating things.
+A class in the context of programming is a blueprint for creating things.
 
 To use another cooking analogy...
 
@@ -87,9 +79,11 @@ def thomas_jefferson(self):
   )
 ```
 
-Here we see that we're designing our crew to consist of 2 agents (gw & tj)
+And zooming out, we can see that we're designing our crew to consist of 2 agents (gw & tj)
 
 ## Let's try running our crew again
+
+- Now that we've defined our agents let's try running them again...
 
 - `python src/our_crew_of_agents/main.py`
 

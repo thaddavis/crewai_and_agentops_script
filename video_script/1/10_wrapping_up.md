@@ -12,18 +12,20 @@ agentops==0.3.12
 crewai==0.63.6
 ```
 
-B) Let's store a copy of this code so you can reference it. Let's store it on GitHub
+B) Let's store a copy of this code, so you can check it out, on GitHub
 
 If your unfamiliar with how .git and GitHub works there are plenty of resources online for getting up to speed
 
-So what we can do is tell .git to store a copy of all the files and folders in our project EXCEPT for the ones listed in this special .gitignore file
+So what do is use .git to store a copy of all the files and folders in our project...
 
-REMEMBER that on principle we never want to share our API keys
+EXCEPT for the ones listed in this special .gitignore file - for example the .env file
 
-And notice how our editor, VSCode, grays the files and folders listed in the .gitignore for us
+REMEMBER that we never want to share our API keys in order to prevent others from abusing our 3rd-party accounts
 
-So when we upload our code to GitHub notice how the .env file containing our API keys is nowhere to be found
+So notice how our editor, VSCode, grays the files and folders listed in the .gitignore to indicate to use that they will not be tracked by .git
 
-C) Let's close our Devcontainer and the POOF!
+And after we upload our code to GitHub, notice how the .env file, containing our API keys, is nowhere to be found
 
-We are back on our base machine and it's like nothing ever happened.
+C) And finally, let's close our Devcontainer and the POOF!
+
+We are back on our base machine (aka our laptop or Desktop) and it's like nothing ever happened.

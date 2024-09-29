@@ -4,9 +4,9 @@ Connecting a CrewAI project with OpenAI is simple.
 
 First we have to sign up on OpenAI's platform: `https://platform.openai.com/`
 
-OpenAI pricing is usage-based like a gas station. So you might need to add a couple dollars of credits to your account.
+OpenAI's pricing is usage-based just like a gas station. So you might need to add a couple dollars of credits to your account.
 
-If you've never used OpenAI's platform, I'd suggest adding the minimum amount allowed as that should be more than enough for what we're doing
+If you've never used OpenAI's platform, I'd suggest adding the minimum amount allowed as that should be more than enough for what we're doing in this video
 
 You can always add more credits later if needed
 
