@@ -18,7 +18,7 @@ we see blah, we see blah...
 
 https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#creating-a-new-project
 
-OK!, So in the same way a chef can look at a recipe and get the gist of it and then improvise on it when cook a dish, we're going to build a CrewAI application based on the general outline of this project structure...
+OK!, So in the same way a chef can look at a recipe and get the gist of it and then improvise on it when their cooking a dish, we are going to build a CrewAI application based on this general project structure...
 
 https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#creating-a-new-project
 
@@ -26,7 +26,7 @@ Let's create the following file & folders in the Dev container...
 
 ```
 mkdir -p src/our_crew_of_agents
-touch src/our_crew_of_agents/main.py 
+touch src/our_crew_of_agents/main.py
 ```
 
 <!--
@@ -45,6 +45,8 @@ mv src/our_crew_of_agents/main.py src/our_crew_of_agents/blah.py
 print("Telling my agents to do something...")
 python src/our_crew_of_agents/blah.py
 ```
+
+(PAUSE)
 
 Names are just labels and there are an infinite number of ways to label and organize code in a project.
 

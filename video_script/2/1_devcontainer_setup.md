@@ -15,7 +15,7 @@ mkdir .devcontainer
 touch .devcontainer/devcontainer.json
 touch Dockerfile.dev
 
-These files are related to "Docker" and will help us create a little "mini-machine" or development sandbox running on top of our base machine so we stay organized...
+These files are related to "Docker" and will help us create a little "mini-machine" or development sandbox running on top of our machine...
 
 ## Populate `devcontainer.json`
 

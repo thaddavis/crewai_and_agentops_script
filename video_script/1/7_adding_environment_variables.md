@@ -4,13 +4,15 @@ CrewAI supports various LLMs for powering the agents in a crew but by default is
 
 If you're unfamiliar with the term LLM...
 
-An LLM is the part of an agent we would most likely call it's brain...
+An LLM is the part of an agent we would call it's brain...
 
-The details of how an LLM works can be explored outside of this video if interested...
+The details of how an LLM works can be explored outside of this video if interested.
 
-But for our purposes, we'll be calling an LLM (powered by OpenAI via their API) each time an agent in our crew needs to perform the current task assigned to it...
+For our purposes, we'll be calling an LLM powered by OpenAI via their API each time an agent in our crew needs to perform the current task assigned to it...
 
-Connecting our CrewAI project with OpenAI is simple.
+(PAUSE)
+
+Connecting our project with OpenAI is simple.
 
 First, we have to sign up on OpenAI's platform: `https://platform.openai.com/`
 
@@ -26,9 +28,11 @@ And after you have your OpenAI platform account set up, you'll provision and cop
 
 Make sure you keep this key private so no one besides you creates charges on your account
 
+(PAUSE)
+
 And then here is how we securely add this API key to our project
 
-For the beginners watching this way of adding API key's to a project is actually very common so pay attention closely...
+For the beginners watching, this way of adding API keys to a project is actually very common so pay attention closely...
 
 ## Add environment variables
 

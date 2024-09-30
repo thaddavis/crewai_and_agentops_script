@@ -2,16 +2,16 @@
 
 - FileNotFoundError: [Errno 2] No such file or directory: '/code/src/our_crew_of_agents/config/agents.yaml'
 
-- The way CrewAI is designed requires us to include an `agents.yaml` file at a specific location
+- The way CrewAI is designed requires us to include an `agents.yaml` file at this specific location
 
 - https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#agentsyaml
 
-Let's add this file like so...
+SO let's add this file like so...
 
 - `mkdir -p src/our_crew_of_agents/config`
 - `touch src/our_crew_of_agents/config/agents.yaml`
 
-and paste in the following...
+and paste in the following content...
 
 ```.yaml
 george_washington:
@@ -37,7 +37,7 @@ thomas_jefferson:
     United States.
 ```
 
-Around the time of recording, in October 2024, the official structure for the content of this `agents.yaml` file follows the structure shown here ...
+Around the time of recording, in October 2024, the content of this `agents.yaml` file has to follow the structure shown here ...
 
 - https://docs.crewai.com/core-concepts/Agents/
 
@@ -48,13 +48,17 @@ name_of_agent:
   backstory: <TEXT_DESCRIBING_THE_BACKSTORY_OF_THE_AGENT>
 ```
 
-There are other properties beside the role, goal, and backstory we can give to our agents, but these are the ones required by CrewAI's framework...
+There are other properties beside the role, goal, and backstory we can give to our agents, but these are the required ones by CrewAI's framework the others properties are optional
+
+(PAUSE)
 
 FYI: This way of outlining configuration is extremely common in programming and is called YAML format...
 
 YAML allows you to specify key-value pairs of information that can be nested at various levels...
 
-In the context of a .yaml file, the `>` (angled bracket-like) character is called a "folded block" symbol. This character allows you to write the value associated with a key or property on multiple lines instead of one big, long line 
+In the context of a .yaml file, the `>` (angled bracket) character is called a "folded block" symbol. This character allows you to write the value associated with a key or property on multiple lines instead of one big, long line 
+
+(PAUSE)
 
 The way we connect this `agents.yaml` config to our crew in the `crew.py` file is like this...
 
@@ -73,9 +77,11 @@ def thomas_jefferson(self):
   )
 ```
 
-Zooming out, you can see what we have here is a called a "class"...
+(PAUSE)
 
-A class in the context of programming is a blueprint for creating things.
+So, zooming out, we can see our Crew class is coming together nicely...
+
+For the beginners, a class in the context of programming is a blueprint for creating things.
 
 To use another cooking analogy...
 
@@ -83,7 +89,9 @@ Imagine a recipe for making an amazing dish. The recipe tells us the ingredients
 
 Similarly, a "class" defines the ingredients (or components) of code. When we pass a class to the interpreter of a particular programming language, for example the Python interpreter, we get runnable code that is based on the blueprint outlined in the class
 
-So, in this class, we can see we're designing our crew to consist of 2 agents (gw & tj)
+So, with this class, we can see we're designing a crew of agents with one of the agents being gw & the other being tj
+
+(PAUSE)
 
 ## Let's try running our crew again
 
@@ -91,7 +99,7 @@ So, in this class, we can see we're designing our crew to consist of 2 agents (g
 
 - `python src/our_crew_of_agents/main.py`
 
-- Ok we see something new being spit out which is great. That means we fixed the issue related to the missing `agents.yaml` file
+- Ok we see a different error which is great. That means we fixed the issue related to the missing `agents.yaml` file
 
 ## Observe the error
 

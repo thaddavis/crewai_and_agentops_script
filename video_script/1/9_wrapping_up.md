@@ -2,7 +2,7 @@
 
 Let's now wrap this up...
 
-A) Let's record the exact versions of `crewai` and `agentops` that we used in case we want to reference them in the future
+A) Let's record the exact versions of the PyPI packages we used in case we want to reference them in the future
 
 One of the conventional ways of doing this is like so...
 
@@ -10,6 +10,7 @@ One of the conventional ways of doing this is like so...
 ```
 agentops==0.3.12
 crewai==0.63.6
+python-dotenv==1.0.1
 ```
 
 B) Let's store a copy of this code on GitHub

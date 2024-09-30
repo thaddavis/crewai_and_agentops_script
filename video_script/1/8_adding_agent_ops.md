@@ -8,9 +8,11 @@ AgentOps is compatible with many different multi-agent frameworks, including Cre
 
 A) The cost of each agent in our crew
 B) The time each agent takes to complete its tasks
-and C) Any errors encountered when executing tasks
+and C) Any errors encountered during execution
 
 The process of integrating AgentOps is very easy and is similar to how we integrated OpenAI...
+
+(PAUSE)
 
 - Create an account on AgentsOps platofrm (https://app.agentops.ai/)
 - Provision and copy an API key
