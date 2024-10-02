@@ -6,8 +6,6 @@ First we have to sign up on OpenAI's platform: `https://platform.openai.com/`
 
 OpenAI's pricing is usage-based just like a gas station. So you might need to add a couple dollars of credits to your account.
 
-If you've never used OpenAI's platform, I'd suggest adding the minimum amount allowed as that should be more than enough for what we're doing in this video
-
 You can always add more credits later if needed
 
 `https://platform.openai.com/api-keys`
@@ -18,7 +16,7 @@ Provision an API_KEY
 
 And make sure you keep this key private so no one besides you creates charges on your account
 
-Here is how we securely add this API KEY to our CrewAI project
+Copy the API KEY and here is how we securely add it to our CrewAI project
 
 ## Add environment variables
 

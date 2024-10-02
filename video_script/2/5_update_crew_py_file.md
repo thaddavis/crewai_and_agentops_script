@@ -12,8 +12,8 @@ by making the following updates
 
 ## Explain the updates
 
-And zooming out, what we've done here is create the blueprint for building a hit-making music duo consisting of an acclaimed songwriter & producer and tasking them with creating a #1 hit song
+Zooming out, what we've done here is create a standard CrewAI project with the CrewAI CLI and customized it for building a hit-making music duo of agents (consisting of an acclaimed songwriter & producer) that create #1 hit songs
 
 ## Cliffhanger
 
-Before we kickoff our agents tho and have a hit on our hands, let's track our crew with AgentOps to make sure we have a backup of the generated song in the cloud for future reference
+Before we kickoff our agents and have a hit on our hands, let's track our crew with AgentOps to make sure we have a backup of the generated song in the cloud for future reference

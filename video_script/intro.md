@@ -32,6 +32,10 @@ For reference, here's a list showing the leading open source multi-agent framewo
   - 19 contributors - 456 on Discord - https://github.com/MadcowD/ell
 10. Agency Swarm - 2.4k stars
   - 10 contributors - 329 on Discord - https://github.com/VRSEN/agency-swarm
+11. Praison - 2.1k stars
+  - 7 contributors - https://github.com/MervinPraison/PraisonAI
+
+
 
 <!-- And just so we get an overall view of the multi-agent landscape, let's rerank by social media reach...
 

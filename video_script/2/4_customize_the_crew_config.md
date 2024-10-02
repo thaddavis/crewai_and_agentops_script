@@ -1,8 +1,6 @@
 ## CrewAI projects can get quite complicated BUT can can also be very simple
 
-- So let's customize our crew by replacing the default "research" and "analyst" agents with the following agents
-
-https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#agentsyaml
+- Let's customize our crew by replacing the default "research" and "analyst" agents with the following agents
 
 ```
 songwriter:
@@ -26,9 +24,11 @@ producer:
     and the mixing engineer can then mix the song.
 ```
 
-and let's also replace the default tasks provided by the generated project with these ones...
+If you're wondering how this `agents.yaml` configuration works, the link to the relevant documentation on CrewAI is linked in the description
 
-https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#tasksyaml
+https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#agentsyaml
+
+and let's also replace the default tasks provided by the generated project with these ones...
 
 ```
 songwriting:
@@ -45,3 +45,7 @@ producing:
     Lyrics, detailed melody, and chord progression for the song
   agent: producer
 ```
+
+and if you're wondering how this `tasks.yaml` configuration works, the link to the relevant documentation on CrewAI is linked in the description as well
+
+https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#tasksyaml

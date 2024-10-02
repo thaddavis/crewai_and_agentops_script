@@ -1,6 +1,6 @@
 # SUPERSAIYAN
 
-Alright now we have a rough outline of song, taking a quick look this leaves a lot of room for interpretation but let's produce it and see what it sounds like...
+Taking a quick look at what our crew provided, this leaves a lot of room for interpretation but let's produce it and see what it sounds like...
 
-1) Produce it manually
-2) Product it with Suno
+1) 1st, let's produce it manually
+2) 2nd, we'll produce it an A.I. system called Suno

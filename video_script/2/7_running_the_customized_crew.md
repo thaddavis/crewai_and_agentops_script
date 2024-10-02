@@ -1,10 +1,10 @@
 ## Run the crew again
 
-- We are now ready to run a crew and generate our hit song...
+- Before we run this CrewAI crew of agents and generate a hit song...
 
-- But before we do that let's scan over our work...
+- let's review our customizations one last time...
 
-- the agent.yaml looks good
+- the agents.yaml looks good
 
 - the tasks.yaml looks good
 
@@ -16,28 +16,40 @@
 
 - For example instead of hard-coding all the requirements of our song in our config we could've made some aspects dynamic by inserting placeholders...
 
-- For example, let's say we wanted to customize the genre...
+- For example, let's say we want to customize the genre...
 
-- We could put a placeholder in our config like so { genre } and CrewAI's framework will replace these placeholders with the values provided at kickoff
+- We could put a placeholder in our config like so { genre } and CrewAI's framework would replace these placeholders with the values provided at kickoff
 
-For example we could do something like this to easily control the genre that our musicians are specialized in...
+For example, to easily control the genre that our musicians are specialized in we would do this when calling the crew...
 
 ```
 inputs = {
-  'genre': 'Country'
+  'genre': 'Hip Hop' 
 }
 FrequencyMusicCrewCrew().crew().kickoff(inputs=inputs)
 ```
 
-But let's keep things simple for this DEMO. You can explore the advanced features offered by CrewAI, and there are many, outside of this video if interested...
+or...
+
+```
+inputs = {
+  'genre': 'Country' 
+}
+FrequencyMusicCrewCrew().crew().kickoff(inputs=inputs)
+```
+
+or
+
+But let's keep things simple. You can explore the more advanced features offered by CrewAI outside of this video...
 
 ```
 FrequencyMusicCrew().crew().kickoff()
 ```
 
-Let's run the crew again: `crewai run`
+So NOW let's run the crew and see what happens: `crewai run`
 
 ## Observe the link to AgentOps
 
-- Ok so now we have our hit song
+- Alright, looks like we have our hit song
+
 - Let's actually make this song to see what it sounds like
