@@ -16,11 +16,11 @@
 
 - For example instead of hard-coding all the requirements of our song in our config we could've made some aspects dynamic by inserting placeholders...
 
-- For example, let's say we want to customize the genre...
+- Let's say we want to customize the genre...
 
-- We could put a placeholder in our config like so { genre } and CrewAI's framework would replace these placeholders with the values provided at kickoff
+- We could've put a placeholder in our config like so { genre } and CrewAI's framework would've replaced these placeholders with the values provided at kickoff
 
-For example, to easily control the genre that our musicians are specialized in we would do this when calling the crew...
+For example, to easily control the genre that our musicians are specialized in we could do this when calling the crew...
 
 ```
 inputs = {
@@ -35,7 +35,7 @@ or...
 inputs = {
   'genre': 'Country' 
 }
-FrequencyMusicCrewCrew().crew().kickoff(inputs=inputs)
+HitMusicOnlyCrew().crew().kickoff(inputs=inputs)
 ```
 
 or
@@ -43,7 +43,7 @@ or
 But let's keep things simple. You can explore the more advanced features offered by CrewAI outside of this video...
 
 ```
-FrequencyMusicCrew().crew().kickoff()
+HitMusicOnlyCrew().crew().kickoff()
 ```
 
 So NOW let's run the crew and see what happens: `crewai run`

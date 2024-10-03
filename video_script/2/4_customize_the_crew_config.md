@@ -24,7 +24,9 @@ producer:
     and the mixing engineer can then mix the song.
 ```
 
-If you're wondering how this `agents.yaml` configuration works, the link to the relevant documentation on CrewAI is linked in the description
+If you're wondering how this `agents.yaml` configuration works, the link to the relevant documentation on CrewAI website is linked in the description
+
+In this file we are creating 2 agents, a songwriter and a producer and giving each of them a role, goal, & backstory specified in natural language
 
 https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#agentsyaml
 
@@ -46,6 +48,8 @@ producing:
   agent: producer
 ```
 
-and if you're wondering how this `tasks.yaml` configuration works, the link to the relevant documentation on CrewAI is linked in the description as well
+and if you're wondering how this `tasks.yaml` configuration works, the link to the relevant documentation on CrewAI website is linked in the description as well
+
+In this file we are creating 2 tasks that will be executed from top to bottom. First we are assiging the task to write a song about accountability to the songwriter and after the song has been been generated it will be passed to a producer who will compose the full song with (chords and melody) in preparation for handoff to an engineer and artist to make it
 
 https://docs.crewai.com/getting-started/Start-a-New-CrewAI-Project-Template-Method/#tasksyaml

@@ -15,7 +15,7 @@ mkdir .devcontainer
 touch .devcontainer/devcontainer.json
 touch Dockerfile.dev
 
-These files are related to "Docker" and will help us create a little "mini-machine" or development sandbox running on top of our machine...
+These files are related to "Docker" and will help us create a little "mini-computer" or development sandbox running on our laptop or Desktop etc....
 
 ## Populate `devcontainer.json`
 
@@ -62,15 +62,19 @@ This "Dev containers" command palette option will only be available if you have 
 
 ## Waiting
 
-Now we wait for the Dev container to be built...
+and now we wait for the Dev container to be built...
+
+After building this Dev container we can easily shut it down and turn it back on in seconds but if for some reason it needs to be rebuilt we have to take that 1-3 minutes of wait time depends on the details of environment
 
 ## After
 
-To gloss over the details, we are now in a "mini-computer" running on top of our computer
+Ok, it took about a minute for me to build
+
+We are now in a "mini-computer", or Dev container, running on top of our computer
 
 Let's run a quick test to make sure we're looking good.
 
-As CrewAI is a Python-based tool, we created a Devcontainer with Python installed (Python 3.12 to be exact as you see cause by line  of the Dockerfile.dev)...
+As CrewAI is a Python-based tool, we created a Devcontainer with Python installed (Python 3.12 to be exact as you see on line 1 of the Dockerfile.dev)...
 
 Let's make sure Python is working as expected
 
@@ -95,7 +99,7 @@ pwd
 
 FYI: the `pwd` command stands for "present working directory"
 
-If we look at the root of our base machine we can see that the /code folder is no where to be found...
+NOTE: If we look at the root of our base machine we can see that the /code folder is no where to be found...
 
 The mental model to keep in mind is that we have 2 machines running on our machine...
 
@@ -106,4 +110,4 @@ Each of these systems has its own file system and is capable of having completel
 
 We will be working in the Dev container moving forward so that when we finish this walkthrough we can simply kill the Dev container and our base machine will be left clean
 
-This helps us stay organized overtime and avoids us having to install unnecessary software on our base machine
+This helps us stay organized and avoids us having to install unnecessary software on our base machine
